@@ -3,30 +3,53 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <title>AllDogs</title>
   </head>
   <body>
     <div id="contenedor">
-      <div id="logo"><img src="img/logo.png" alt="logo"></div>
       <div id="session">
         <ul>
           <li><a href="#">Inicio sessión</a></li>
           <li><a href="#">Registrarse</a></li>
         </ul>
       </div>
-      <div id="navegacion">
-        <ul>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Artículos</a></li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">De Interés</a></li>
-          <li><a href="#">Conócenos</a></li>
-        </ul>
+      <div class="clear"></div>
+      <div id="cabecera">
+        <div id="logo"><img src="img/logo.png" alt="logo" /></div>
+        <div id="navegacion">
+          <ul>
+            <li class="sub"><a href="#">Servicios</a>
+              <div id="submenu">
+                <ul>
+                  <li><a href="#">Servicio 1</a></li>
+                  <li><a href="#">Servicio 2</a></li>
+                  <li><a href="#">Servicio 3</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Artículos</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">De Interés</a></li>
+            <li><a href="#">Conócenos</a></li>
+          </ul>
+        </div>
       </div>
+      <div class="clear"></div>
       <div id="slide"><img src="img/slide.jpg" alt="slide"></div>
+      <div class="clear"></div>
       <div id="left-sidebar"></div>
-      <div id="contenido"></div>
-      <div id="right-sidebar"><img src="img/pienso1.jpg" alt=""></div>
+      <div id="contenido">
+        <div id="articulo">
+          <h3>Noticia 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consectetur quas, beatae. Vel ea, cupiditate quo eos quos cumque
+            voluptate repudiandae tempora ex laborum, incidunt sequi id,
+            quam veniam eveniet minima.</p>
+        </div>
+      </div>
+      <div id="right-sidebar"><img src="img/pienso1.jpg" alt="pienso"></div>
+      <div class="clear"></div>
       <div id="pie"><p>AllDogs.com</p></div>
     </div>
   </body>
