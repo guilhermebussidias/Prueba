@@ -73,7 +73,7 @@ body {
 }
 
 #navegacion {
-  line-height: 100px; /* Alinea verticalmente */
+  /*line-height: 100px;*/ /* Alinea verticalmente */
   float: right;
   width: 70%;
   text-align: center;
@@ -94,17 +94,15 @@ body {
 #navegacion li a {
   padding-right: 15px;
 }
-
-#submenu ul{
-  list-style: none;
-}
-#submenu ul li{
+#navegacion li ul {
   display: none;
+  position: absolute;
 }
-.sub a:hover{
+.sub a:hover > ul {
+  display: block;
+}
+#navegacion li ul li {
   position: relative;
-    display: block;
-    z-index: 9999;
 }
 
 #slide img {
