@@ -7,10 +7,22 @@
     <title>AllDogs</title>
   </head>
   <body>
+    <div class="modal" id="inicio-session">
+      <div class="modal-container">
+        <form action="#">
+          <p>Usuario</p>
+          <input type="text" name="usuario"><br>
+          <p>Contraseña</p>
+          <input type="password" name="contrasena"><br><br>
+          <input type="submit" value="Enviar">
+          <button>Cerrar</button>
+        </form>
+      </div>
+    </div>
     <div id="contenedor">
       <div id="session">
         <ul>
-          <li><a href="#">Inicio sessión</a></li>
+          <li><a href="#inicio-session">Inicio sessión</a></li>
           <li><a href="#">Registrarse</a></li>
         </ul>
       </div>
@@ -18,8 +30,8 @@
       <div id="cabecera">
         <div id="logo"><img src="img/logo.png" alt="logo" /></div>
         <div id="navegacion">
-          <ul>
-            <li class="sub"><a href="#">Servicios</a>
+          <ul id="menu">
+            <li><a href="#">Servicios</a>
                 <ul>
                   <li><a href="#">Servicio 1</a></li>
                   <li><a href="#">Servicio 2</a></li>
@@ -34,19 +46,41 @@
         </div>
       </div>
       <div class="clear"></div>
-      <div id="slide"><img src="img/slide.jpg" alt="slide"></div>
+        <div id="slide">
+          <ul>
+            <li><img src="img/slide1.jpg" alt="slide"></li>
+            <li><img src="img/slide2.jpg" alt="slide"></li>
+            <li><img src="img/slide3.jpg" alt="slide"></li>
+            <li><img src="img/slide4.jpg" alt="slide"></li>
+          </ul>
+        </div>
       <div class="clear"></div>
-      <div id="left-sidebar"></div>
       <div id="contenido">
         <div id="articulo">
-          <h3>Noticia 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consectetur quas, beatae. Vel ea, cupiditate quo eos quos cumque
-            voluptate repudiandae tempora ex laborum, incidunt sequi id,
-            quam veniam eveniet minima.</p>
+          <div class="noticia">
+            <h3>Noticia 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur quas, beatae. Vel ea, cupiditate quo eos quos cumque
+              voluptate repudiandae tempora ex laborum, incidunt sequi id,
+              quam veniam eveniet minima.</p>
+          </div>
+          <div class="noticia">
+            <h3>Noticia 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur quas, beatae. Vel ea, cupiditate quo eos quos cumque
+              voluptate repudiandae tempora ex laborum, incidunt sequi id,
+              quam veniam eveniet minima.</p>
+          </div>
         </div>
       </div>
-      <div id="right-sidebar"><img src="img/pienso1.jpg" alt="pienso"></div>
+      <div id="right-sidebar">
+        <div class="pienso">
+          <img src="img/pienso1.jpg" alt="pienso">
+        </div>
+        <div class="pienso">
+          <img src="img/pienso2.jpg" alt="pienso">
+        </div>
+      </div>
       <div class="clear"></div>
       <div id="pie"><p>AllDogs.com</p></div>
     </div>
