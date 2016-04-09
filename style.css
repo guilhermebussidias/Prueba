@@ -154,7 +154,6 @@ ul{
   -o-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
 }
-
 .modal:before {
   content: "";
   position: fixed;
@@ -168,7 +167,6 @@ ul{
 .modal:target:before {
   display: block;
 }
-
 .modal:target .modal-container {
   top: 30%;
   -webkit-transform: translate(-50%,0);
@@ -176,8 +174,11 @@ ul{
   -o-transform: translate(-50%,0);
   transform: translate(-50%,0);
 }
-
 .modal-close {} /* Evita al cerrar que la pagina suba hasta arriba */
+
+.input-form {
+  margin-bottom: 10px;
+}
 
 #articulo {
   float: left;

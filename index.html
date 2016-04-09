@@ -11,9 +11,24 @@
       <div class="modal-container">
         <form action="#">
           <p>Usuario</p>
-          <input type="text" name="usuario"><br>
+          <input class="input-form" type="text" name="usuario"><br>
           <p>Contraseña</p>
-          <input type="password" name="contrasena"><br><br>
+          <input class="input-form" type="password" name="contrasena"><br><br>
+          <input type="submit" value="Enviar">
+          <button>Cerrar</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="registrar">
+      <div class="modal-container">
+        <form action="#">
+          <p>Usuario</p>
+          <input class="input-form" type="text" name="usuario"><br>
+          <p>Email</p>
+          <input class="input-form" type="email" name="email"><br>
+          <p>Contraseña</p>
+          <input class="input-form" type="password" name="contrasena"><br>
+          <input type="checkbox" name="Proveedor" value="proveedor"> Proveedor <br><br>
           <input type="submit" value="Enviar">
           <button>Cerrar</button>
         </form>
@@ -23,7 +38,7 @@
       <div id="session">
         <ul>
           <li><a href="#inicio-session">Inicio sessión</a></li>
-          <li><a href="#">Registrarse</a></li>
+          <li><a href="#registrar">Registrarse</a></li>
         </ul>
       </div>
       <div class="clear"></div>
